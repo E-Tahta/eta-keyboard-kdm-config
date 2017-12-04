@@ -1,23 +1,6 @@
 #! /bin/bash
 # Xstartup - run as root before session starts
-RED='\033[1;31m'
-YEL='\033[1;33m'
-NC='\033[0m' # No Color
 PATH="$PATH:/usr/bin/X11"
-
-if [ ! -f /tmp/eta_log ]; then
-    touch /tmp/eta_log
-    chmod 777 /tmp/eta_log
-fi
-
-echo -e "${RED}$0" >> /tmp/eta_log
-u=`/usr/bin/whoami`
-echo -e "${RED}$0 ${NC}running as ${YEL}$u" >> /tmp/eta_log
-removed=`rm -rvf /tmp/.virtualkeyboard`
-echo -e "${RED}$0 ${YEL}$removed"
-
-echo -e "${RED}$0 ${NC}calling check_optictouch & " >> /tmp/eta_log
-/usr/bin/check_optictouch &
 
 if [ -e /etc/nologin ]; then
   # always display the nologin message, if possible
