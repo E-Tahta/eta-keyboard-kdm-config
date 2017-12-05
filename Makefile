@@ -13,6 +13,7 @@ install:
 	install -m 0755 $(XSTARTUP_SCRIPT) $(DESTDIR)/usr/share/eta/eta-keyboard-kdm-config
 	install -m 0755 $(SCRIPT_FILE) $(DESTDIR)/usr/share/eta/eta-keyboard-kdm-config
 	install -m 0644 $(BACKGROUND_CONFIG) $(DESTDIR)/usr/share/eta/eta-keyboard-kdm-config
+	install -m 0644 $(IMAGES) $(DESTDIR)/usr/share/eta/eta-keyboard-kdm-config
 	install -m 0644 $(KDM_CONFIG) $(DESTDIR)/usr/share/eta/eta-keyboard-kdm-config
 	mkdir -p $(DESTDIR)/usr/bin
 	cd $(DESTDIR)/usr/bin && ln -s /usr/share/eta/eta-keyboard-kdm-config/$(SCRIPT_FILE) preloadkde
