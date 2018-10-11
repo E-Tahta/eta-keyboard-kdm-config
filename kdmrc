@@ -24,7 +24,7 @@ Startup=/etc/kde4/kdm/Xstartup
 
 [X-*-Greeter]
 AntiAliasing=true
-ColorScheme=Zion
+ColorScheme=Eta
 FaceSource=AdminOnly
 FailFont=OpenSymbol,10,-1,5,50,0,0,0,0,0
 GUIStyle=Cleanlooks
