@@ -1,5 +1,0 @@
-#!/bin/bash
-
-rm -rf /tmp/root/.virtualkeyboard
-
-/usr/bin/eta-keyboard login &
